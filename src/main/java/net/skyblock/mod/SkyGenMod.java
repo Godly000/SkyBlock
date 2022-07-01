@@ -1,18 +1,18 @@
 package net.skyblock.mod;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.biome.v1.*;
-import net.minecraft.block.*;
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.ModificationPhase;
 import net.minecraft.util.Identifier;
-import net.minecraft.util.math.intprovider.*;
-import net.minecraft.util.registry.*;
-import net.minecraft.world.*;
-import net.minecraft.world.gen.*;
-import net.minecraft.world.gen.feature.*;
-import net.minecraft.world.gen.stateprovider.*;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.RegistryKey;
+import net.minecraft.world.gen.GenerationStep;
+import net.minecraft.world.gen.feature.DefaultFeatureConfig;
+import net.minecraft.world.gen.feature.Feature;
 
 public class SkyGenMod implements ModInitializer {
-  private static final Feature<SkyGenConfig> SKYGEN = new SkyFeature(SkyGenConfig.CODEC);
+  private static final Feature<DefaultFeatureConfig> SKYGEN = new SkyFeature(DefaultFeatureConfig.CODEC);
+
   @Override
   public void onInitialize() {
     Registry.register(Registry.FEATURE, new Identifier("godly", "sky_gen"), SKYGEN);
