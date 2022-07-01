@@ -20,7 +20,7 @@ public class SkyFeature extends Feature<DefaultFeatureConfig> {
         super(configCodec);
     }
 
-    private static TagKey<Block> BLOCKS_TO_KEEP_TAG = TagKey.of(Registry.BLOCK_KEY, new Identifier("godly", "blocks_to_keep"));
+    private static final TagKey<Block> BLOCKS_TO_KEEP_TAG = TagKey.of(Registry.BLOCK_KEY, new Identifier("godly", "blocks_to_keep"));
 
     @Override
     public boolean generate(FeatureContext<DefaultFeatureConfig> context) {
