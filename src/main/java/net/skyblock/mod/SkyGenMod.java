@@ -19,7 +19,7 @@ public class SkyGenMod implements ModInitializer {
     BiomeModifications.create(new Identifier("godly", "sky_gen"))
             .add(ModificationPhase.ADDITIONS,
                     (context) -> true, // return true for all biomes
-                    (context) -> context.getGenerationSettings().addFeature(GenerationStep.Feature.TOP_LAYER_MODIFICATION,
+                    (context) -> context.getGenerationSettings().addFeature(GenerationStep.Feature.VEGETAL_DECORATION,
                             RegistryKey.of(Registry.PLACED_FEATURE_KEY, new Identifier("godly", "sky_gen"))));
   }
 }

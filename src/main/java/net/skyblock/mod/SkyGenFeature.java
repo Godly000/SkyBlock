@@ -21,7 +21,7 @@ public class SkyGenFeature extends Feature<DefaultFeatureConfig> {
 
         for (int y = 0; y < 15; y++) {
             offset = offset.rotateYClockwise();
-            context.getWorld().setBlockState(topPos.up(y).offset(offset), Blocks.STONE.getDefaultState(), 3);
+            context.getWorld().setBlockState(topPos.up(y).offset(offset), Blocks.AIR.getDefaultState(), 3);
         }
 
         return true;
