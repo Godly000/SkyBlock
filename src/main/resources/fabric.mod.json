@@ -23,6 +23,7 @@
     ]
   },
   "mixins": [
+    "godly.mixins.json"
   ],
 
   "depends": {
