@@ -1,6 +1,6 @@
 package net.skyblock.mod.mixin;
 
-import net.minecraft.nbt.NbtCompound;
+// import net.minecraft.nbt.NbtCompound;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.chunk.ProtoChunk;
 import org.spongepowered.asm.mixin.Mixin;
@@ -13,6 +13,6 @@ public interface ProtoChunkAccessor {
     @Accessor
     List<BlockPos> getLightSources();
 
-    @Accessor
-    List<NbtCompound> getEntities();
+    // @Accessor
+    // List<NbtCompound> getEntities();
 }
