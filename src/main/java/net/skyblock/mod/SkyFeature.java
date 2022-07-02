@@ -45,7 +45,7 @@ public class SkyFeature extends Feature<DefaultFeatureConfig> {
             }
         }
 
-        // ((ProtoChunkAccessor)chunk).getEntities().clear();
+        ((ProtoChunkAccessor)chunk).getEntities().clear();
         return true;
     }
 }

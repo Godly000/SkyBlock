@@ -1,2 +1,0 @@
-execute as @a at @s run fill ~6 ~5 ~6 ~-6 ~-5 ~-6 minecraft:sculk_shrieker[can_summon=true] replace minecraft:sculk_shrieker[can_summon=false]
-scoreboard players set @e[type=creeper,nbt={powered:1b}] Creeper 1
